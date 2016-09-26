@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="css/图片轮播.css"/>
+<script type="text/javascript" rel="javascript" src="js/jquery.js"></script>
+<script type="text/javascript" rel="javascript" src="js/carousel.js"></script>
+</head>
+<body>
+<h1>Demo2_旋转木马插件</h1>
+<!--节点属性配置参数，通过属性获取-->
+<div class="post-main J_Poster" data-setting='{
+                    "width":1100,
+                    "height":525,
+                    "posterWidth":840,
+                    "posterHeight":525,
+                    "scale":0.8,
+                    "autoPlay":true,
+                    "delay":3000,
+                    "speed":300
+}'>
+	<div class="poster-btn poster-prev-btn"></div>
+	<ul class="poster-list">
+	<li class="poster-item"><a hfer="#"><img src="images/image01.jpg"></a></li>
+	<li class="poster-item"><a hfer="#"><img src="images/image02.jpg"></a></li>
+	<li class="poster-item"><a hfer="#"><img src="images/image03.jpg"></a></li>
+	<li class="poster-item"><a hfer="#"><img src="images/image04.jpg"></a></li>
+	<li class="poster-item"><a hfer="#"><img src="images/image05.jpg"></a></li>
+	</ul>
+	<div class="poster-btn poster-next-btn"></div>
+</div>
+<p class="description">
+   插件说明：
+   1.data-setting属性接收初始化设置参数，<br/>
+   "width"和"height"分别为:插件宽度和高度；<br/>
+   "posterWidth"和"posterHeight":最前一张图片宽度和高度；<br/>
+   "scale"：向后照片透明度为前一张的比率；<br/>
+   "autoPlay"：是否自动播放；<br/>
+   "delay":页面加载后轮播延时播放时间设置；<br/>
+   "speed"：自动播放速度；<br/>
+</P>
+
+<script type="text/javascript">
+$(function(){
+	//carousel
+	//var carousel = new Carousel($("J_Poster").eq(0));
+    Carousel.init($(".J_Poster"));
+});
+</script>
+</body>
+</html>

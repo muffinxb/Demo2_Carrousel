@@ -1,0 +1,27 @@
+@charset "utf-8";
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin:0;padding:0;}
+em{font-style:normal;}
+li{list-style:none;}
+a{text-decoration:none}
+img{border:none;vertical-aligan:top}
+table{border-collapse:collapse}
+input,textarea{outline:none}
+textarea{resize:none;overflow:auto;}
+body{font-size:12px;font-family:"Î¢ÈíÑÅºÚ";}
+              /*清除浏览器默认样式*/
+.clear{zoom:1;}
+.clear:after{content:'';display:block;clear:both;}
+.fl{float:left;}
+.fr{float:right;}
+h1{margin: 20px 50px;}
+.description{margin-left: 30px;font-size: 20px;line-height: 24px;margin-top: 20px;}
+
+.post-main{margin-left:100px;position:relative;width:800px;height:270px;margin-top: 30px;}
+.post-main a,.post-main img{display: block;width:100%;height:100%;}
+.poster-list{width:800px;height:270px;}
+.poster-item{position: absolute;top:0;left:0;}
+.poster-btn{width:100px;height:270px;z-index:10;position: absolute;top:0;cursor:pointer;}
+.poster-prev-btn{left:0;background:url(../images/prev1.png) no-repeat left center;}
+.poster-next-btn{right:0;background:url(../images/next1.png) no-repeat right center;}
+
+
